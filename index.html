@@ -7,63 +7,89 @@
     <meta name="keywords" content="html, css, course, tags">
     <meta name="description" content="Это базовый курс по html">
     <title>HTML Курс</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1{
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    <h1><strong>Андрей</strong></h1>
-    <img src="./imgs/Селфи.jpg" alt="Здесь должна быть фотография" width="200">
-    <p>Я люблю заниматься различными <em>видами спорта</em>, а именно лыжи, настольный теннис и волейбол.</p>
-    <h4>Список социальных сетей</h4>
-    <a href="https://vk.com/amiftakhov" target="_blank">вконтакте</a> | 
-    <a href="https://www.youtube.com/channel/UCnjlw27yc_rzwf0D6bl4Rqg" target="_blank">youtube</a>
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Настольный теннис</li>
-        <li>Волейбол</li>
-        <li>Лыжи</li>
-    </ol>
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название работы</th>
-                <th>Должность</th>
-                <th>Период, когда ты там работал</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Гипротюменнефтегаз</td>
-                <td>инженер</td>
-                <td>2002-2016</td>
-            </tr>
-            <tr>
-                <td>ТННЦ</td>
-                <td>Главный специалист</td>
-                <td>2016-2021</td>
-            </tr>
-            <tr>
-                <td>Новатэк</td>
-                <td>Главный специалист</td>
-                <td>2021-сейчас</td>
-            </tr>
-        </tbody>
-    </table>
-    <h2>Связаться со мной</h2>
+    <div class="container">
+        <div class="info">
+            <img src="./imgs/Селфи.jpg" class="avatar" alt="Здесь должна быть фотография">
+            <div class="info-text">
+                <h1><strong>Андрей Мифтахов</strong></h1>
+                <p>Я люблю заниматься различными <em>видами спорта</em>, а именно лыжи, настольный теннис и волейбол.</p>
+                <p>И ещё люблю путешествовать.</p>
+                <h4>Список социальных сетей</h4>
+                <a href="https://vk.com/amiftakhov" target="_blank">вконтакте</a> | 
+                <a href="https://www.youtube.com/channel/UCnjlw27yc_rzwf0D6bl4Rqg" target="_blank">youtube</a>
+            </div>
+        </div>
+        <div class="card color-burlywood">
+            <h2>Мои хобби</h2>
+            <div class="hobi">
+                <ol class="list">
+                    <li>Настольный теннис</li>
+                    <li>Волейбол</li>
+                    <li>Лыжи</li>
+                </ol>
+            </div>
+        </div>
+        <div class="card color-chocolate">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <!--<thead>
+                    <tr>
+                        <th>Название работы</th>
+                        <th>Должность</th>
+                        <th>Период, когда ты там работал</th>
+                    </tr>
+                </thead>-->
+                <tbody>
+                    <tr>
+                        <td>Гипротюменнефтегаз</td>
+                        <td>инженер</td>
+                        <td>2002-2016</td>
+                    </tr>
+                    <tr>
+                        <td>ТННЦ</td>
+                        <td>Главный специалист</td>
+                        <td>2016-2021</td>
+                    </tr>
+                    <tr>
+                        <td>Новатэк</td>
+                        <td>Главный специалист</td>
+                        <td>2021-сейчас</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card color-cadetblue">
+            <h2>Мои курсы</h2>
+            <ul class="link-list">
+                <li><a href="#">Получение профессии Frontent Разработчика</a></li>
+                <li><a href="#">Все курсы</a></li>
+            </ul>
+        </div>
+        <h2>Связаться со мной</h2>
         <form action="/">
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" placeholder="Введите имя" id="name">
-        </div>
-        <div>
-            <label for="email">Ваше email:</label>
-            <input type="text" placeholder="Введите email" id="email">
-        </div>
-        <div>
-            <label for="mess">Сообщение</label>
-            <br>
-            <textarea id="mess" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
-        </div>
-        <button type="button">Отправить!</button>
-    </form>
+            <div>
+                <label for="name">Ваше имя:</label>
+                <input type="text" placeholder="Введите имя" id="name">
+            </div>
+            <div>
+                <label for="email">Ваше email:</label>
+                <input type="text" placeholder="Введите email" id="email">
+            </div>
+            <div>
+                <label for="mess">Сообщение</label>
+                <br>
+                <textarea id="mess" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
+            </div>
+            <button class="btn" type="button">Отправить!</button>
+        </form>
+    </div>
 </body>
 </html>
